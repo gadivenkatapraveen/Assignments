@@ -72,17 +72,18 @@ console.log("Event time is " + timeH + "\:" + timeM + " " + timePeriod);
 
 //17.Name of a country: "United States"
 let countryName = "\"United States\"";
-console.log("Name of a country is " + countryName)
+console.log("Name of a country is " + countryName);
 
 //18.Person's eye color: "Brown"
 let eyeColor = "Brown";
-console.log("Person's eye color is " + eyeColor)
+console.log("Person's eye color is " + eyeColor);
 
 //19.Person's birthplace: "New York City"
 let birthPlace = "New York City";
-console.log("Person's birthplace is " + birthPlace)
+console.log("Person's birthplace is " + birthPlace);
 
 //20. Distance between two cities: 200.5
 const distanceBtwCities = 200.5;
-console.log("Distance between two cities is " + distanceBtwCities )
+console.log("Distance between two cities is " + distanceBtwCities );
+
 
