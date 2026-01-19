@@ -25,7 +25,7 @@ let isSkyGreen = false; //noolean false
 console.log(typeof isJavaScriptFun); //output: boolean
 
 //4. undefined ==> undefined represents a variable that has been declared but not assigned a value.
-let undefedVar; // variable defined but assigned a value.
+let undefedVar; // variable defined but not assigned a value.
 console.log(typeof undefined); //output: undefined.
 
 //5. null ==> Represents the intentional absence of any object value.
@@ -33,6 +33,18 @@ let nullVar = null; //variable assigned iwth null.
 console.log(typeof nullVar);
 
 //6. symbol ==> symbol represents a unique identifier.
+
+ let countryOfOrigin = Symbol();
+ let productInfo = {
+    productName: "samsung",
+    productPrice: 4558,
+    [countryOfOrigin]: "china"
+ };
+
+ console.log(productInfo);
+
+
+
 
 
 
@@ -75,4 +87,61 @@ console.log(fruitsAndPrices[5]);
 console.log(fruitsPricesAndAvailability[8]); //output: true
 
 
+//3. function ==> function represents a block of code designed to perform a particular task.
+function loginToApplication(browserName, URL) {
+    console.log("Launch the browser " + browserName);
+    console.log("Naviagte to URL: " + URL);
+    console.log("Application launched successfully!");
 
+}
+
+//Call the function
+loginToApplication("Chrome", "https://www.google.com")
+
+
+
+//4. Date ==> Date represents date and time in Javascript.
+let currentDate = new Date();
+
+//get current year
+console.log(currentDate.getFullYear()); // output: current year
+
+//get month
+console.log(currentDate.getMonth() + 1); // output: current month(0-based index, so adding 1)
+
+//get current date
+console.log(currentDate.getDate()); // output: current date
+
+console.log(currentDate.getHours()); // output: current hours
+console.log(currentDate.getMinutes()); // output: current minutes
+console.log(currentDate.getMilliseconds()); // output: current milli seconds
+
+
+//5. Map ==> Map represents a collection of Key-value pairs where keyas can be of any data type.
+let employeeMap = new Map();
+employeeMap.set("empID", 101);
+employeeMap.set("empName", "John Doe");
+employeeMap.set("havingvisa", true);
+employeeMap.set("empName", "Bharath");
+
+employeeMap.delete("havingvisa"); // deleting the key havingvisa
+
+// **** Duplicate keyas are not allowed but values are allowed
+//get employee name
+console.log(employeeMap.get("empName")); // output: Bharath
+console.log(employeeMap);
+console.log(employeeMap.size); // getting the size of the map
+
+
+//6. Set ==> Set represents a collection of unique values of any data type.
+let uniqueNumbers = new Set();
+uniqueNumbers.add(10);
+uniqueNumbers.add(20);
+uniqueNumbers.add(30);
+uniqueNumbers.add(20); // duplicate value, will not be added.
+uniqueNumbers.delete(10); //delete value 10
+
+console.log(uniqueNumbers.size); // getting size of the set
+
+
+console.log(uniqueNumbers);
