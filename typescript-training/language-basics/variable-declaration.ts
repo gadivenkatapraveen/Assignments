@@ -7,5 +7,5 @@
 
 //1. Inistaialization
 let a :number = 10; //initialized
-//
-console.log(a);
+//a= "Bharath"; //Error: Type 'string' is not assignable to type 'number'
+console.log("Initialized variable a: ", a);
