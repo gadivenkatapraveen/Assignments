@@ -8,7 +8,7 @@ empinfo.set("Carol Davis", [82000, 7, 4.5]);
 empinfo.set("David Brown", [90000, 10, 2.0]);
 empinfo.set("Eva Green", [60000, 2, 3.5]);
 
-//empty Map to store Hike percentage
+//empty Map to store Hike percentage.
 let hikeMap: Map<string, number> = new Map();
 
 // Calculate hike for each employee and store in hikeMap
@@ -28,7 +28,7 @@ console.log("Hike Percentage for each employee:");
 console.log(hikeMap);
 
 
-// Function to calculate hike percentage
+// Function to calculate hike percentage.
 function calculateHike(baseSalary: number, experience: number, rating: number): number {
     let variablePayPercentage: number = 0;
     let bonus: number = 0;
