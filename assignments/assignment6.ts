@@ -1,4 +1,7 @@
-
+// A Prime number is a number greater than 1
+// that is divisible only by 1 and itself.
+// Prime numbers start from 2.
+// Example: 2, 3, 5, 7, 11, ...
 
 let testNum: number = 97 ;
 let isPrime: boolean = true;
